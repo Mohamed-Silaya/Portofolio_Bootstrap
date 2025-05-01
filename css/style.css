@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+
+:root{
+    --color_1: #003135;
+    --color_2: #024950;
+    --color_3: #964734;
+    --color_4: #0FA4AF;
+    --color_5: #AFDDE5;
+    --color_6: #fff;
+    --color_trance_1: #0fa4af2e;
+}
+
+
+body{
+    font-family: "Limelight" , sans-serif;
+/* height: 10000px; */
+padding: .5rem;
+}
+
+.main_btn{
+    background-color: var(--color_3);
+    color: var(--color_6);
+}
+
+.main_btn:hover{
+    background-color: var(--color_2);
+}
+
+.main_title::after{
+    content: '';
+    width: 200px;
+    height: 4px;
+    background-color: var(--color_4);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+/* Start nav bar */
+    .navbar{
+        background-color: var(--color_2);
+    }
+    .navbar .navbar-toggler {
+        color: var(--color_6);
+        font-size: 25px;
+        border-color: var(--color_6);
+    }
+
+
+    .navbar .navbar-nav .nav-link {
+        color: var(--color_6);
+    }
+    .navbar .navbar-nav .nav-link.active,
+    .navbar .navbar-nav .nav-link:focus,
+    .navbar .navbar-nav .nav-link:hover{
+        color: var(--color_4);
+    }
+    .navbar .search{
+        border-left: 1px solid var(--color_6);
+        color: var(--color_4);
+    }
+
+/* End nav bar */
+
+
+/* Start landing  */
+.landing{
+    /* background-image: url("/My_website-images/mypic_2.png"); */
+    background-color: var(--color_2);
+    /* height: 100vh; */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    min-height: 100vh;
+} 
+
+
+/* End landing */
+
+/* start features */
+.features .icon-holder{
+    height:200px;
+
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    
+    color: var(--color_trance_1);
+}
+
+.features .icon-holder .icon{
+    font-size: 3rem;
+    color: var(--color_4);
+}
+.features .feat h4{
+    color: var(--color_3)
+}
+/* End features */
+
+/* Start stuff */
+.stuff{
+    background-color: var(--color_2);
+}
+.stuff .description{
+    max-width: 500px;
+}
+/* end stuff */
+
+/* Start my team */
+.my_team{
+    background-color: var(--color_6);
+    min-height: 100vh;
+
+}
+.my_team h2{
+    color: var(--color_1);
+}
+.my_team .box{
+    background-color: var(--color_trance_1);
+}
+.my_team .box h4{
+    color: var(--color_1);
+}
+.my_team .box img{
+    height: 150px;
+    width: 150px;
+}
+/* End my team */
+
+/* Start footer */
+.footer{
+    background-color: var(--color_2);
+}
+.footer .info img{
+    height: 100px;
+    width: 100px;
+}
+.footer .copy_right > span{
+background-color: var(--color_1);
+}
+.footer .contact ul{
+    width: 40px;
+    height: 40;
+}
+.footer .fa-facebook{
+    background-color: #1877f2;
+}
+
+.footer .fa-whatsapp{
+    background-color: #128c7e;
+}
+
+.footer .fa-linkedin{
+    background-color: #0a66c2;
+}
+.footer .fa-github{
+    background-color: #333;
+}
+
+/* End footer */
